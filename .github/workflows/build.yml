@@ -38,9 +38,12 @@ jobs:
 
       - run: make package FINALPACKAGE=1
 
+      - name: Get version
+        run: echo "VERSION=$(grep '^Version:' control | awk '{print $2}')" >> "$GITHUB_ENV"
+
       - name: Upload to GitHub Releases
         uses: softprops/action-gh-release@v3
         with:
-          tag_name: build
-          name: build
+          tag_name: ${{ env.VERSION }}
+          name: ${{ env.VERSION }}
           files: packages/*.deb
