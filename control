@@ -6,4 +6,4 @@ Description: Opens YouTube to Subscriptions tab.
 Maintainer: altvault
 Author: altvault
 Section: Tweaks
-Depends: mobilesubstrate, firmware (>= 14.0)
+Depends: mobilesubstrate, firmware (>= 16.0)
