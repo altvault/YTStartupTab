@@ -1,7 +1,7 @@
 Package: com.altvault.ytstartuptab
 Name: YTStartupTab
 Version: 0.0.1
-Architecture: iphoneos-arm64
+Architecture: iphoneos-arm
 Description: Opens YouTube to Subscriptions tab.
 Maintainer: altvault
 Author: altvault
